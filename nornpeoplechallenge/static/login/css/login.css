@@ -1,0 +1,79 @@
+
+.loginForm {
+    background-color: #dad2d8;
+    position: absolute;
+    top: 20vh;
+    left: 20vw;
+    height: 60vh;
+    width: 60vw;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.loginForm * {
+    width: 60%;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.loginForm h1 {
+    font-family: 'Indie Flower', cursive;
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+.loginForm input {
+    font-size: 1.2em;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid black;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.loginForm input:focus {
+    outline: 0;
+}
+
+.loginForm input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.loginForm input:focus::-moz-placeholder {
+    color: transparent;
+}
+
+.loginForm input:focus::-ms-input-placeholder {
+    color: transparent;
+}
+
+
+.loginForm button {
+    margin-top: 4vh;
+    margin-bottom: 1vh;
+    border-radius: 30px;
+    height: 5vh;
+    font-size: 100%;
+    letter-spacing: 2px;
+    transition: .5s;
+    background-color: #75704e;
+    border: 0;
+    color: #dad2d8;
+}
+
+.loginForm button:hover {
+    background-color: #412234;
+}
+
+.loginForm a {
+    font-size: .6em;
+    letter-spacing: 2px;
+}
+
+.loginForm a:hover {
+    color: #774c60;
+}

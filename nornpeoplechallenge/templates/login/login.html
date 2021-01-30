@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login NornPeople Challenge</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'login/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'login/css/login.css' %}">
+    <script src="{% static 'login/js/base.js' %}"></script>
+</head>
+<body>
+    <header></header>
+    <section>
+        <div class="container">
+            <form action="{% url 'login_' %}" method="POST" class="loginForm">
+                <h1>Login</h1>
+                {% csrf_token %}
+                <input type="text" placeholder="usuario" name="username">
+                <input type="password" placeholder="contraseña" name="password">
+                <span style="color: red;">{{error}}</span>
+                <button type="submit">Entrar</button>
+                <a href="" title="recuperar contraseña">Recuperar contaseña</a>
+            </form>
+        </div>
+    </section>
+    <footer></footer>
+</body>
+</html>

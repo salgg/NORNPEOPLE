@@ -1,0 +1,19 @@
+.main {
+    animation: 1s ease-in-out 0s 1 scale;
+    background-color: #dad2d8;
+    position: absolute;
+    top: 1vh;
+    left: 1vw;
+    height: 98vh;
+    width: 98vw;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+h1 {
+    font-size: 3em;
+}
