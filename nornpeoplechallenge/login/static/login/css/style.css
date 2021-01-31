@@ -1,0 +1,24 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-size: medium;
+    color: #143642;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #774c60;
+}
+
+@keyframes scale {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+    100% {
+        -webkit-transform: scale(1);
+            transform: scale(1);
+    }
+}
