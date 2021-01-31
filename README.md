@@ -19,4 +19,5 @@ Instrucciones para instalación:
 9. En la terminal ejecutar el comando: python manage.py collectstatic y poner 'yes'
 10. En la terminal ejecutar el comando: python manage.py createsuperuser y responder lo que se te pide para crear el primer usuario
 11. En la terminal ejecutar el comando: python manage.py runserver
+
 ¡Se ha instalado! Ahora abre en un navegador web y pon la dirección http://localhost:8000/ para empezar a usar la app con el usuario que creaste en el paso 10
