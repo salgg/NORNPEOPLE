@@ -1,6 +1,5 @@
 .main {
     /*animation: 1s ease-in-out 0s 1 scale;*/
-    transition: 1s;
     background-color: #dad2d8;
     position: absolute;
     top: 1vh;
@@ -21,7 +20,7 @@ h1 {
 
 .containerLogTable {
     width: 90vw;
-    height: 60vh;
+    max-height: 60vh;
     overflow-y: scroll;
     border: 1px solid rgba(73, 73, 73, 0.6);   
 }
