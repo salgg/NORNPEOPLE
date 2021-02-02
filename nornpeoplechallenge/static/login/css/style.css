@@ -1,15 +1,17 @@
 body {
     padding: 0;
     margin: 0;
-    font-size: medium;
     color: #143642;
     font-family: 'Roboto', sans-serif;
+    background-color: #000;
 }
 
 .container {
-    width: 100vw;
+    width: 100%;
+    max-width: 1700px;
     height: 100vh;
-    background-color: #774c60;
+    background-color: transparent;
+    overflow: hidden;
 }
 
 @keyframes scale {

@@ -15,14 +15,16 @@
     <header></header>
     <section>
         <div class="container">
+            <div class="bgSky"></div>
+            <div class="bgForest"></div>
             <form action="{% url 'login_' %}" method="POST" class="loginForm">
                 <h1>Login</h1>
                 {% csrf_token %}
-                <input type="text" placeholder="usuario" name="username">
-                <input type="password" placeholder="contraseña" name="password">
+                <input type="text" placeholder="usuario" name="username" autocomplete="off"/>
+                <input type="password" placeholder="contraseña" name="password" autocomplete="off"/>
                 <span style="color: red;">{{error}}</span>
                 <button type="submit">Entrar</button>
-                <a href="{% url 'recoverPassword' %}" title="recuperar contraseña">Olvidé mi contaseña</a>
+                <a href="{% url 'recoverPassword' %}" title="recuperar contraseña">Olvidé mi contraseña</a>
             </form>
         </div>
     </section>

@@ -1,22 +1,55 @@
+header {
+    position: fixed;
+    display: flex;
+    height: 68px;
+    width: 100%;
+    background-color: #412234;
+    border-bottom: 1px solid #000;
+    color: aliceblue;
+    align-items: center;
+}
+
+header div {
+    border-right: 1px solid #000;
+    border-left: 1px solid #000;
+    overflow: hidden;
+}
+
+.hitem {
+    margin: auto;
+    padding-top:20px;
+    font-size: 2vw;
+}
+
+header .menu {
+    height: 100%;
+    width: 20%;
+    text-align: center;
+    cursor: pointer;
+}
+header .menu:hover {
+    color: gray;
+}
+
+footer {
+
+}
+
 .main {
-    /*animation: 1s ease-in-out 0s 1 scale;*/
+    margin-top: 68px;
     background-color: #dad2d8;
-    position: absolute;
-    top: 1vh;
-    left: 1vw;
-    height: 98vh;
-    width: 98vw;
-    border-radius: 30px;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: top;
     align-content: center;
+    font-size: 1vw;
 }
 
-h1 {
-    font-size: 3em;
-}
+
+h1 {font-size: 4vw;}
+h2 {font-size: 2vw;}
 
 .containerLogTable {
     width: 90vw;
@@ -53,5 +86,5 @@ h1 {
     background-color: transparent;
     color: red;
     font-weight: 600;
-    font-size: .8em;
+    font-size: 1.5vw;
 }

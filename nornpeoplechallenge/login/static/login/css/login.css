@@ -1,11 +1,51 @@
+@keyframes parallax-x-left {
+    100%{
+     background-position:-500px 0px;
+   }
+ }
+
+@keyframes parallax-x {
+    0% { background-position: 0px 0px; }
+    40% { background-position: 1px 0px; }
+    80% { background-position: -1px 0px; }
+    100% { background-position: 0px 0px; }
+}
+
+@keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+ }
+
+.container .bgSky {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url('/static/login/media/skybg.jpg');
+    animation: parallax-x-left 100s linear infinite;
+    background-repeat: repeat-x;
+    background-size: cover;
+}
+
+.container .bgForest {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 960px;
+    background-image: url('/static/login/media/forestbg.png');
+    animation: parallax-x 3s linear infinite;
+    background-repeat: repeat-x;
+    background-size: cover;
+}
+
 
 .loginForm {
-    background-color: #dad2d8;
+    animation: 1s ease-out 0s 1 fade-in;
+    background-color: #dad2d83d;
     position: absolute;
-    top: 20vh;
-    left: 20vw;
-    height: 60vh;
-    width: 60vw;
+    top: 20%;
+    left: 20%;
+    height: 60%;
+    width: 60%;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
@@ -18,22 +58,31 @@
     width: 60%;
     text-align: center;
     letter-spacing: 5px;
+    color: aliceblue;
+}
+
+.loginForm a {
+    color:azure;
 }
 
 .loginForm h1,h2,h3 {
     font-family: 'Indie Flower', cursive;
-    font-size: 2em;
+    font-size: 4vw;
     font-weight: bolder;
 }
 
 .loginForm input {
-    font-size: 1.2em;
+    font-size: 1.5vw;
     background-color: transparent;
     border: 0;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid aliceblue;
     margin-top: 1vh;
     margin-bottom: 1vh;
     letter-spacing: 1px;
+}
+
+.loginForm input::-webkit-input-placeholder {
+    color: rgba(240, 248, 255, 0.589);
 }
 
 .loginForm input:focus {
@@ -58,12 +107,13 @@
     margin-bottom: 1vh;
     border-radius: 30px;
     height: 5vh;
-    font-size: 100%;
+    font-size: 2vw;
     letter-spacing: 1px;
     transition: .5s;
     background-color: #75704e;
     border: 0;
-    color: #dad2d8;
+    color: #ebe9ea;
+    text-overflow: ellipsis;
 }
 
 .loginForm button:hover {
@@ -71,7 +121,7 @@
 }
 
 .loginForm a {
-    font-size: .6em;
+    font-size: 1vw;
     letter-spacing: 2px;
 }
 
