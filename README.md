@@ -12,7 +12,7 @@ Instrucciones para instalación:
 2. Instalar Django usando "pip install django" (más información en  https://docs.djangoproject.com/en/3.1/topics/install/#installing-official-release)
 3. Ubicarse en la carpeta /nornpeoplechallenge del proyecto 
 5. En el archivo /nornpeoplechallege/nornpeoplechallenge/settings.py buscar en la linea #77 en el apartado "DATABASES" la sección del engine 'django.db.backends.postgresql_psycopg2' y de ser necesario cambiar los valores de los campos NAME,USER,PASSWORD, HOST Y PORT por los valores necesarios para conectarse a la base de datos postgresql 
-6. En el archivo /nornpeoplechallege/login/view.py buscar la linea #106 cambiar el valor de la varaible sender_email por un correo outlook.com y en la linea # 111 cambiar le valor de la variable sender_password por la contraseña del correo, esto para poder usar dicha cuenta para mandar correos cuando se cambiar uan contraseña. 
+6. En el archivo /nornpeoplechallege/login/view.py buscar la linea #106 cambiar el valor de la varaible sender_email por un correo outlook.com y en la linea # 111 cambiar le valor de la variable sender_password por la contraseña del correo, esto para poder usar dicha cuenta para mandar correos cuando se usa la función de cambiar una contraseña. 
 7. Abrir una terminal ubicada en la carpeta principal del proyecto donde se encuentra el arhivo manage.py
 8. En la terminal ejecutar el comando: python manage.py makemigrations
 9. En la terminal ejecutar el comando: python manage.py migrate
