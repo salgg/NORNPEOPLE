@@ -1,4 +1,4 @@
-# NORNPEOPLE CHALLENGE #
+# NORNPEOPLE CHALLENGE (hecho en menos de 12 horas)#
 ## simple login-logout app ##
 Descripción:
 Nordpeople challenge usando PYTHON, CSS, validaciones Frontend, arquitectura MVC, POO, postgresql, intgridad y normalización de la base de datos y buenas prácticas
